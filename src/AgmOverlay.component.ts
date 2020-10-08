@@ -32,7 +32,7 @@ export interface latLngPlus{
 
 @Component({
   selector:"agm-overlay",
-  template:'<div #content><div style="position:absolute"><ng-content></ng-content></div></div>'
+  template:'<div #content><div style="position:absolute;pointer-events:none"><ng-content></ng-content></div></div>'
 }) export class AgmOverlay{
   @Input() latitude:number
   @Input() longitude:number
